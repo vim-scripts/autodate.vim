@@ -1,0 +1,17 @@
+This is a mirror of http://www.vim.org/scripts/script.php?script_id=291
+
+This plugin inserts and updates a time stamp automatically.
+
+Users can specify a format and position of the time stamp by options.
+By default, autodate.vim searches a keyword "Last Change:."
+in the first 50 lines of the buffer, and inserts a time stamp.  Example: 
+    Last Change: 24-Jun-2003. 
+
+Setting Example:
+    :let b:autodate_keyword_pre = '<!--DATE-->'
+    :let b:autodate_keyword_post = '<!--DATE-->'
+    :let b:autodate_format = '%Y/%m/%d'
+The Result:
+    <!--DATE-->2003/06/24<!--DATE-->
+
+See comments in autodate.vim for more details.
